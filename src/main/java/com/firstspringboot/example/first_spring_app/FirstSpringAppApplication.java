@@ -45,42 +45,42 @@ public class FirstSpringAppApplication {
 //		System.out.println("adrs1 is after adrs1 change is : "+adrs1);
 
 		// loose coupling using setter injection
-
-		Employee emp2 = new Employee();
-		emp2.setId(333);
-		emp2.setName("Vijay");
-		emp2.setEmail("vijay123@gmail.com");
-		emp2.setDesignation("tester");
-
-		Address adrs2 = new Address();
-		adrs2.setDoorNo(345);
-		adrs2.setStreetName("old street");
-		adrs2.setCity("old city");
-
-		emp2.setAddress(adrs2);
-
-		System.out.println("emp2 is : "+emp2);
-		System.out.println("adrs2 is : "+adrs2);
-
-		emp2.getAddress().setDoorNo(999);
-		emp2.getAddress().setStreetName("new street");
-		emp2.getAddress().setCity("new city");
-
-		System.out.println("emp2 after adrs2 chnage is : "+emp2);
-		System.out.println("adrs2 after adrs2 chnage  is : "+adrs2);
-
-		// loose coupling using constructor injection
-		Address adrs3 = new Address(567,"old street","old city");
-		Employee emp3 = new Employee(234,"Sanjay","sanjay123@gmail.com","tester",adrs3);
-
-		System.out.println("emp3 is : "+emp3);
-		System.out.println("adrs3 is : "+adrs3);
-
-		emp3.getAddress().setCity("new city");
-		emp3.getAddress().setStreetName("new street");
-
-		System.out.println("emp3 after adrs3 chnage is : "+emp3);
-		System.out.println("adrs3 after adrs3 chnage  is : "+adrs3);
+//
+//		Employee emp2 = new Employee();
+//		emp2.setId(333);
+//		emp2.setName("Vijay");
+//		emp2.setEmail("vijay123@gmail.com");
+//		emp2.setDesignation("tester");
+//
+//		Address adrs2 = new Address();
+//		adrs2.setDoorNo(345);
+//		adrs2.setStreetName("old street");
+//		adrs2.setCity("old city");
+//
+//		emp2.setAddress(adrs2);
+//
+//		System.out.println("emp2 is : "+emp2);
+//		System.out.println("adrs2 is : "+adrs2);
+//
+//		emp2.getAddress().setDoorNo(999);
+//		emp2.getAddress().setStreetName("new street");
+//		emp2.getAddress().setCity("new city");
+//
+//		System.out.println("emp2 after adrs2 chnage is : "+emp2);
+//		System.out.println("adrs2 after adrs2 chnage  is : "+adrs2);
+//
+//		// loose coupling using constructor injection
+//		Address adrs3 = new Address(567,"old street","old city");
+//		Employee emp3 = new Employee(234,"Sanjay","sanjay123@gmail.com","tester",adrs3);
+//
+//		System.out.println("emp3 is : "+emp3);
+//		System.out.println("adrs3 is : "+adrs3);
+//
+//		emp3.getAddress().setCity("new city");
+//		emp3.getAddress().setStreetName("new street");
+//
+//		System.out.println("emp3 after adrs3 chnage is : "+emp3);
+//		System.out.println("adrs3 after adrs3 chnage  is : "+adrs3);
 	}
 
 }
